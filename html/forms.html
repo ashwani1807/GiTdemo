@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="resume.html">
+    
+    <label for="firstname"> first name:</label>    <!-- label is used to maintain the text and form in single line or left and right-->
+    <input  id="firstname" type="text" minlength="6" maxlength="10" placeholder="pls enter first name" required>
+    
+    <label for="mname">Middle name</label>
+    <input id="mname" type ="text" value="op default" placeholder="please enter mid name">   <!-- value sets the default value to the box -->
+
+    <label for="lname">last name</label>           <!-- for attribute is in label and id attribute is in input-->
+    <input id="lname" type="text" disabled placeholder="pls enter last name">
+    <br><br>
+    
+    <label for="">Age</label>
+    <input type="number" placeholder="enter your age">              
+    <br><br>
+
+    <label for="">Email</label>
+    <input type="email" placeholder="enter your email">
+    <br><br>
+
+    <label for="">Date of joining:</label>
+    <input type="date">
+    <br><br>
+
+    <label for="">Password: </label>
+    <input type="password" name="" id="">
+
+    <p>Enter your shirt size</p>
+    <input type="radio" name="shirt size" id="small"/> 
+    <label for="small">small</label>      <!-- same name should be used to maintain the unique selection in all cases -->
+    <input type="radio" name="shirt size" id="med" checked/>    <!-- checked specifies it is mandatory and automatically selected when refreshed-->
+    <label for="med">medium  </label>     <!-- same id and for should be used to make text a button or touchable-->
+    <input type="radio" name="shirt size" id="large"/>
+    <label for="large">large</label>     <!-- radio represents cicrcular radio button-->
+
+    <br>
+
+     <p>Select the known Languages:</p>
+    <input type="checkbox" name="lang" id="English"/> <!-- by using checkbox we can select any number of options-->
+    <label for="English">English</label>      
+    <input type="checkbox" name="lang" id="Hindi" checked/>   
+    <label for="Hindi">Hindi </label>     
+    <input type="checkbox" name="lang" id="Gujarati"/>
+    <label for="Gujarati">Gujarati</label>     
+    <br><br>
+
+
+    <label for="color">select the colour of your shirt</label>
+    <input type="color" name="" id="color">
+
+    <br><br>
+    <label for="paymentoption">please select a payment method</label>
+    <select name="payment" id="paymentoption">
+        <option value=""></option>
+    <option value="gpay">gpay</option>
+    <option value="phonepe">phonepe</option>     
+    <option value="UPI">UPI</option>
+    <option value="cod">cod</option>
+    </select>
+
+    <br><br>
+    <label for="cmts">Please provide your vauable feedback</label>
+    <textarea name="cmt" id="cmts" rows="10" cols="80" placeholder="please enter feedback"></textarea>
+
+    <br><br>
+    <input type="reset">
+    <input type="submit" name="" id="">
+
+    </form>
+
+    
+</body>
+</html>
